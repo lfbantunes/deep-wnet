@@ -6,7 +6,7 @@ def gen_mask():
     train_ids = ['1', '3', '11', '13', '15', '17', '21', '26', '28', '30', '32', '34', '5', '7', '23', '37']
 
     path_mask = '/home/mdias/datasets/vaihingen/Masks'
-    new_path_mask = '/home/mdias/datasets/vaihingen/Masks_neighbor'
+    new_path_mask = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Masks_neighbor'
     name_template = '/top_mosaic_09cm_area{}.tif'
 
     neighbors = []

@@ -17,7 +17,7 @@ def listdir_nohidden(path):
 
 
 path_img = '/home/mdias/datasets/dstl-satellite-imagery-feature-detection/images_rgb_new/{}.tif'
-new_path_img = '/home/mdias/datasets/dstl-satellite-imagery-feature-detection/images_lab/{}.tif'
+new_path_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/dstl-satellite-imagery-feature-detection/images_lab/{}.tif'
 
 image_ids = list(listdir_nohidden('/home/mdias/datasets/dstl/train_geojson_v3/'))
 print(image_ids)

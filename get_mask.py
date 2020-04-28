@@ -30,8 +30,8 @@ while True:
         new_path_img = '/home/mdias/datasets/potsdam/y_true/'
         break
     elif dataset == 'v':
-        path_img = '/home/mdias/datasets/vaihingen/Ground_Truth/'
-        new_path_img = '/home/mdias/datasets/vaihingen/y_true/'
+        path_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Ground_Truth/'
+        new_path_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/y_true/'
         break
     else:
         dataset = input('p or v?')

@@ -108,7 +108,7 @@ def predict_all(step, path_img):
     path_m = path + 'mask_uni/{}.tif'
     path_i = path_img
     accuracy_all = []
-    path_results = '/home/mdias/datasets/results/'+MODEL+'_'+DATASET+'_'+ID
+    path_results = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/results/'+MODEL+'_'+DATASET+'_'+ID
     if not os.path.exists(path_results): os.makedirs(path_results)
     for test_id in test:
         path_img = path_i.format(test_id)

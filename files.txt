@@ -1,0 +1,24 @@
+attn_augconv.py -> Augmented attention (Note: not used)
+bbox.py -> Script to preprocess the downloaded dstl dataset, can be used to convert polygons to tif images in (x, y, ch) shape. ch are the color channels
+clr_callback.py -> Used in the train_net, it is the clr callback
+create_mask.py -> Script to convert the mask in the (x, y, cl) to (x, y, ch). cl are the number of classes and ch are the color channels
+gen_img_norm.py -> Scrip to normalize the masks in the (x, y, ch) shape
+gen_l.py -> Script to generate the l band of the image, i.e., the black and white image
+gen_mask_neighbour.py -> Script to generate an alternate mask with different weights near the boundaries (Note: not used)
+gen_patches.py -> Script to generate the patches used for training. The img is the input for the network and the full_img is the original image with all the colors, used as one of the targets
+gen_patches_inria.py -> Script to generate the patches for the inria dataset (original black and white images)
+gen_validation.py -> Script to generate the validation patches before the training (Note: not used)
+generator.py -> Generator used for the train_net
+get_step.py-> Script to get the step to use for generate the patches. This is necessary because all the images in the vaihingen have different sizes
+loss.py -> Script with different losses
+lovasz_losses_tf.py -> Lovasz-Softmax loss
+object_based.py -> Script to use a preprocess object based (Note: not used)
+predict.py -> Predict all datasets. Note: the vaihingen dataset requires different "preprocess" before because of the different sizes between the images
+predict_all.py -> Predict for the unified dataset
+predict_noBoundary.py -> Convert the predictions to the values that do not consider the boundaries (as suggested for the challenge organizers of the isprs potsdam and vaihingen datasets)
+rgb2lab.py -> Convert the image from the rgb color space to lab
+rotate_crop.py -> Script to preprocess images, it rotates 45 degree and crop the valid area
+se.py -> Squeeze Excite blocks (https://arxiv.org/abs/1709.01507)
+train_net.py -> Main train network
+unet_model.py -> Baseline - u-net model
+wnet_model.py -> Main w-net model

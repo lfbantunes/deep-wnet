@@ -55,7 +55,7 @@ def predict_all(path_img, path_mask, ids, dataset, step = -1):
     model.load_weights(weights_path)
     tps, tns, fns, fps = 0, 0, 0, 0
     accuracy_all = []
-    path_results = '/home/mdias/datasets/results/'+MODEL+'_'+DATASET+'_'+ID
+    path_results = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/results/'+MODEL+'_'+DATASET+'_'+ID
     if not os.path.exists(path_results): os.makedirs(path_results)
     for test_id in ids:
         path_i = path_img.format(test_id)

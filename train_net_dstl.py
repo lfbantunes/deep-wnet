@@ -53,7 +53,7 @@ def get_model():
     return model
 
 
-weights_path = '/home/mdias/weights/weights_' + MODEL + '_' + DATASET + '_' + ID
+weights_path = 'C:/Users/Utilizador/Documents/Dissertacao/weights/weights_' + MODEL + '_' + DATASET + '_' + ID
 if not os.path.exists(weights_path):
     os.makedirs(weights_path)
 weights_path += '/weights.hdf5'

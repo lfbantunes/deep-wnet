@@ -5,9 +5,9 @@ import numpy as np
 val_ids = ['5', '7', '23', '37']
 name_template = '/top_mosaic_09cm_area{}.tif'
 
-path_img = '/home/mdias/datasets/vaihingen/Images/'
+path_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Images/'
 
-new_path_img = '/home/mdias/datasets/vaihingen/Images_norm/'
+new_path_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Images_norm/'
 
 
 if not os.path.exists(new_path_img): os.makedirs(new_path_img)

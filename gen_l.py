@@ -3,7 +3,7 @@ import os
 from os import listdir
 from os.path import isfile, join
 import numpy as np
-
+"""
 # INRIA
 path_img_inria = '/home/mdias/datasets/unified/images_inria/'
 path_img_inria_val = '/home/mdias/datasets/unified/validation/images_inria/'
@@ -28,7 +28,7 @@ ids_potsdam_val = ['2_12', '3_12', '4_12', '5_12', '6_12', '7_12']
 ids_potsdam_test = ['2_13','2_14','3_13','3_14','4_13','4_14','4_15','5_13','5_14','5_15','6_13','6_14','6_15','7_13']
 path_img_potsdam = '/home/mdias/datasets/unified/images_potsdam/top_potsdam_{}_RGB.tif'
 new_path_img_potsdam = '/home/mdias/datasets/unified/images_potsdam_l/top_potsdam_{}_RGB.tif'
-
+"""
 # Vaihingen
 ids_vaihingen_train = ['1', '3', '11', '13', '15', '17', '21', '26', '28', '30', '32', '34']
 ids_vaihingen_val = ['5', '7', '23', '37']
@@ -36,12 +36,12 @@ ids_vaihingen_test = ['2', '4', '6', '8', '10', '12', '14', '16', '20', '22', '2
 path_img_vaihingen = '/home/mdias/datasets/unified/images_vaihingen/top_mosaic_09cm_area{}.tif'
 new_path_img_vaihingen = '/home/mdias/datasets/unified/images_vaihingen_l/top_mosaic_09cm_area{}.tif'
 
-paths = {'ids_inria_train': [ids_inria_train, path_img_inria, new_path_img_inria],
-        'ids_inria_val': [ids_inria_val, path_img_inria_val, new_path_img_inria_val],
-        'ids_inria_test': [ids_inria_test, path_img_inria_test, new_path_img_inria_test],
-        'ids_potsdam_train': [ids_potsdam_train, path_img_potsdam, new_path_img_potsdam],
-        'ids_potsdam_val': [ids_potsdam_val, path_img_potsdam, new_path_img_potsdam],
-        'ids_potsdam_test': [ids_potsdam_test, path_img_potsdam, new_path_img_potsdam],
+paths = {#'ids_inria_train': [ids_inria_train, path_img_inria, new_path_img_inria],
+        # 'ids_inria_val': [ids_inria_val, path_img_inria_val, new_path_img_inria_val],
+        # 'ids_inria_test': [ids_inria_test, path_img_inria_test, new_path_img_inria_test],
+        # 'ids_potsdam_train': [ids_potsdam_train, path_img_potsdam, new_path_img_potsdam],
+        # 'ids_potsdam_val': [ids_potsdam_val, path_img_potsdam, new_path_img_potsdam],
+        # 'ids_potsdam_test': [ids_potsdam_test, path_img_potsdam, new_path_img_potsdam],
         'ids_vaihingen_train': [ids_vaihingen_train, path_img_vaihingen, new_path_img_vaihingen],
         'ids_vaihingen_val': [ids_vaihingen_val, path_img_vaihingen, new_path_img_vaihingen],
         'ids_vaihingen_test': [ids_vaihingen_test, path_img_vaihingen, new_path_img_vaihingen]}

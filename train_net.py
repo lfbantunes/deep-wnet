@@ -54,17 +54,18 @@ elif DATASET == 'vaihingen':
     TRAIN_IDS = ['1', '3', '11', '13', '15', '17', '21', '26', '28', '30', '32', '34']#,
                  #'_rc_1', '_rc_3', '_rc_11', '_rc_13', '_rc_15', '_rc_17', '_rc_21', '_rc_26', '_rc_28', '_rc_30', '_rc_32', '_rc_34']
     VAL_IDS = ['5', '7', '23', '37']
-    path_img = '/home/mdias/datasets/vaihingen/Images_l/top_mosaic_09cm_area{}.tif'
-    path_full_img = '/home/mdias/datasets/vaihingen/Images_lab_hist/top_mosaic_09cm_area{}.tif'
-    path_mask = '/home/mdias/datasets/vaihingen/Masks/top_mosaic_09cm_area{}.tif'
+    path_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Images/top_mosaic_09cm_area{}.tif'
+    path_full_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Images_lab_hist/top_mosaic_09cm_area{}.tif'
+    path_mask = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Masks/top_mosaic_09cm_area{}.tif'
 
     # Val paths
-    path_patch_img = '/home/mdias/datasets/vaihingen/Images_l_patch/'
-    path_patch_full_img = '/home/mdias/datasets/vaihingen/Images_lab_hist_patch/'
-    path_patch_mask = '/home/mdias/datasets/vaihingen/Masks_patch/'
+    path_patch_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Images_l_patch/'
+    path_patch_full_img = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Images_lab_hist_patch/'
+    path_patch_mask = 'C:/Users/Utilizador/Documents/Dissertacao/datasets/vaihingen/Masks_patch/'
 
     PATCH_SZ = 320  # should divide by 16
-    BATCH_SIZE = 5
+    #BATCH_SIZE = 5
+    BATCH_SIZE = 2
     STEPS_PER_EPOCH = 10000
 
     VALIDATION_STEPS = 1369
@@ -92,7 +93,8 @@ def get_model():
     return model
 
 
-weights_path = '/home/mdias/weights/weights_' + MODEL + '_' + DATASET + '_' + ID
+#weights_path = '/home/mdias/weights/weights_' + MODEL + '_' + DATASET + '_' + ID
+weights_path = 'C:/Users/Utilizador/Documents/Dissertacao/weights/weights_' + MODEL + '_' + DATASET + '_' + ID
 if not os.path.exists(weights_path):
     os.makedirs(weights_path)
 weights_path += '/weights.hdf5'

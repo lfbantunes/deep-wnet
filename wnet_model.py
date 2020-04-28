@@ -56,7 +56,7 @@ def conv2_super_block(input_tensor, n_filters, init_seed=None):
 
 
 def wnet_model(n_classes=7, im_sz=160, n_channels=3, n_filters_start=32, growth_factor=2, droprate=0.5, init_seed=None):
-    inputs = Input((im_sz, im_sz, 1))
+    inputs = Input((im_sz, im_sz, 3))
 
     # -------------Encoder
     # Block1
